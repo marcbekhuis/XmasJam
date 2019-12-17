@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class TilePlacer : MonoBehaviour
 {
-    [SerializeField] Transform player;
-    [SerializeField] int tilesToPlace = 6;
-    [SerializeField] GameObject tile;
+    [SerializeField] private Transform player;
+    [SerializeField] private int tilesToPlace = 6;
+    [SerializeField] private GameObject tile;
+    [SerializeField][Range(-90,90)] private float mountainSlope = -15;
 
-    [SerializeField] List<GameObject> tiles = new List<GameObject>();
+    [SerializeField] private List<GameObject> tiles = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,6 @@ public class TilePlacer : MonoBehaviour
     private void PlaceTile()
     {
         tiles.Add(Instantiate(tile, tiles[tiles.Count - 1].transform.position - tiles[tiles.Count - 1].transform.rotation * new Vector3(0,0,100), new Quaternion(0,0,0,0)));
-        tiles[tiles.Count - 1].transform.eulerAngles = new Vector3(-15,0,0);
+        tiles[tiles.Count - 1].transform.eulerAngles = new Vector3(mountainSlope,0,0);
     }
 }

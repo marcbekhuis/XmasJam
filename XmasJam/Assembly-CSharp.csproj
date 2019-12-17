@@ -63,9 +63,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\LawineMovement.cs" />
     <Compile Include="Assets\Movement.cs" />
+    <Compile Include="Assets\OpenGameOverScreen.cs" />
+    <Compile Include="Assets\PlayerDie.cs" />
     <Compile Include="Assets\SlopeObjectPlacer.cs" />
     <Compile Include="Assets\TilePlacer.cs" />
+    <Compile Include="Assets\UIFunctions.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Unity/Project/XmasJam/XmasJam/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

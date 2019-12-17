@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
+    [SerializeField] private float maxTurnAngle = 10;
+    [SerializeField] private float straveSpeed = 5;
+
     private Rigidbody rigidbody;
 
     // Start is called before the first frame update
@@ -20,7 +23,7 @@ public class Movement : MonoBehaviour
 
     private void Rotate()
     {
-        rigidbody.transform.eulerAngles = new Vector3(rigidbody.transform.eulerAngles.x, Input.GetAxis("Horizontal") * 10, rigidbody.transform.eulerAngles.z);
-        rigidbody.velocity = new Vector3(Input.GetAxis("Horizontal") * -5, rigidbody.velocity.y, rigidbody.velocity.z);
+        rigidbody.transform.eulerAngles = new Vector3(rigidbody.transform.eulerAngles.x, Input.GetAxis("Horizontal") * maxTurnAngle, rigidbody.transform.eulerAngles.z);
+        rigidbody.velocity = new Vector3(Input.GetAxis("Horizontal") * -straveSpeed, rigidbody.velocity.y, rigidbody.velocity.z);
     }
 }
