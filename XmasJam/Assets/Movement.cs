@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Movement : MonoBehaviour
 {
     [SerializeField] private float maxTurnAngle = 10;
     [SerializeField] private float straveSpeed = 5;
+    [SerializeField] private Text speedText;
 
     private Rigidbody rigidbody;
 
@@ -19,6 +21,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
         Rotate();
+        speedText.text = "Speed: " + -rigidbody.velocity.z;
     }
 
     private void Rotate()

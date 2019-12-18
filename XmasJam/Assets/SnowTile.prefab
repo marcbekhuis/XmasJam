@@ -98,8 +98,12 @@ MonoBehaviour:
   cashToPlace:
   - {fileID: 3481819309885213572, guid: 5ee70dda1c0eb8f4b8d3d640bfacf6ed, type: 3}
   - {fileID: 3481819309885213572, guid: 8876798b2892de746af0a6991bf6588d, type: 3}
+  - {fileID: 3481819309885213572, guid: 49fc380a54f6f504a8706f191a843942, type: 3}
+  rocksToPlace:
+  - {fileID: 5781311706974410288, guid: 5f3ac9e1048b5704badf4185809dff84, type: 3}
   amountToPlace: 20
   amountOfCashToPlace: 50
+  amountOfRockToPlace: 10
   minDistanceBetweenObjects: 7
   xPlacementRange: 80
   zPlacementRange: 45
