@@ -95,7 +95,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectsToPlace:
   - {fileID: 2298443502628313840, guid: 2b7ff4124caff6345bb2a40f5f6a46b1, type: 3}
+  cashToPlace:
+  - {fileID: 3481819309885213572, guid: 5ee70dda1c0eb8f4b8d3d640bfacf6ed, type: 3}
+  - {fileID: 3481819309885213572, guid: 8876798b2892de746af0a6991bf6588d, type: 3}
   amountToPlace: 20
+  amountOfCashToPlace: 50
+  minDistanceBetweenObjects: 7
+  xPlacementRange: 80
+  zPlacementRange: 45
 --- !u!65 &5440244467976214354
 BoxCollider:
   m_ObjectHideFlags: 0
